@@ -6,11 +6,8 @@
 
     <groupId>com.eumji.rabbitmq</groupId>
     <artifactId>rabbitmq-java-publish-receive</artifactId>
-    <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
-    <modules>
-        <module>../rabbitmq-java-topic</module>
-    </modules>
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
         <dependency>
