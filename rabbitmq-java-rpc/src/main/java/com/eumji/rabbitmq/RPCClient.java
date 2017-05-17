@@ -30,9 +30,12 @@ public class RPCClient {
         replyQueueName = channel.queueDeclare().getQueue();
     }
 
+    /**
+     * 发出请求并返回响应消息
+     */
     public String call(String message) throws IOException, InterruptedException {
+        //模拟唯一的CorrelationId 
         String corrId = UUID.randomUUID().toString();
-
         AMQP.BasicProperties props = new AMQP.BasicProperties
                 .Builder()
                 .correlationId(corrId)
@@ -40,9 +43,8 @@ public class RPCClient {
                 .build();
 
         channel.basicPublish("", requestQueueName, props, message.getBytes("UTF-8"));
-
-        final BlockingQueue<String> response = new ArrayBlockingQueue<String>(1);
-
+        //ArrayBlockingQueue 记录响应内容
+        final BlockingQueue<String> response = new ArrayBlockingQueue<>(1);
         channel.basicConsume(replyQueueName, true, new DefaultConsumer(channel) {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
@@ -65,8 +67,8 @@ public class RPCClient {
         try {
             fibonacciRpc = new RPCClient();
 
-            System.out.println(" client Requesting 30");
-            response = fibonacciRpc.call("30");
+            System.out.println(" client will Requesting message");
+            response = fibonacciRpc.call("RPC客户端请求！");
             System.out.println(" client Got server response message: '" + response + "'");
         }
         catch  (IOException | TimeoutException | InterruptedException e) {
@@ -77,7 +79,9 @@ public class RPCClient {
                 try {
                     fibonacciRpc.close();
                 }
-                catch (IOException _ignore) {}
+                catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
