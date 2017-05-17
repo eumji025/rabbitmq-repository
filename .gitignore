@@ -1,0 +1,59 @@
+# Created by .ignore support plugin (hsz.mobi)
+### CVS template
+/CVS/*
+**/CVS/*
+.cvsignore
+*/.cvsignore
+### Linux template
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+### Java template
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+/*/target
+/*/*.iml
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
+# gitignore
+/*/.gitignore
+.idea/checkstyle-idea.xml
+.idea/compiler.xml
+.idea/kotlinc.xml
+.idea/libraries/
+.idea/markdown-navigator/
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+
