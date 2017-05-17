@@ -28,7 +28,7 @@ public class ReceiveWorker{
             connection = factory.newConnection();
             channel = connection.createChannel();
 
-            channel.exchangeDeclare(EXCHANGE_NAME,"fanout");
+            channel.exchangeDeclare(EXCHANGE_NAME,BuiltinExchangeType.FANOUT);
             String queue = channel.queueDeclare().getQueue();
             channel.queueBind(queue,EXCHANGE_NAME,"");
             System.out.println("receive worker wait  message!!!");

@@ -6,4 +6,13 @@
 消费者不能关闭连接，需要一直轮询查看是否存在消息
 
 ## rabbitmq-java-queque
-rabbitmq任务队列实例
+rabbitmq任务队列示例
+
+## rabbitmq-java-publish-receive
+rabbitmq发布订阅示例
+
+## rabbitmq-java-routing
+rabbitmq路由示例
+
+## rabbitmq-java-rpc
+rabbitmq PRC通信示例
