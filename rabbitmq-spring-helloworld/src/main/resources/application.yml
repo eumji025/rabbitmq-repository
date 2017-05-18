@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: use_message
+  rabbitmq:
+    addresses: localhost
+    username: eumji
+    password: eumji025
+    port: 5672
+
+logging:
+  level:
+    org: error
+
+tutorial:
+  client:
+    duration: 10000
+
+
