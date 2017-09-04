@@ -6,13 +6,14 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ConfigurableApplicationContext;
 
 /**
- * FILE: com.eumji.rabbitmq.RabbitAmqpTutorialsRunner.java
- * MOTTO:  不积跬步无以至千里,不积小流无以至千里
- * AUTHOR: EumJi
- * DATE: 2017/5/17
- * TIME: 20:59
+ * 模拟初始化过程
+ * @email eumji025@gmail.com
+ * @author:EumJi
+ * @date: 2017/9/4
+ * @time: 15:26
  */
 public class RabbitAmqpTutorialsRunner implements CommandLineRunner {
+
     @Value("${tutorial.client.duration:0}")
     private int duration;
 
