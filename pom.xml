@@ -23,6 +23,7 @@
         <module>rabbitmq-spring-exchange-fanout</module>
         <module>rabbitmq-spring-direct-exchange</module>
         <module>rabbitmq-spring-exchange-fanout</module>
+        <module>rabbitmq-spring-topic-exchange</module>
         <module>rabbitmq-spring-rpc</module>
     </modules>
 
