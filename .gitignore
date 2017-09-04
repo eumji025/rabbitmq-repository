@@ -20,7 +20,6 @@
 .nfs*
 ### Java template
 # Compiled class file
-*.class
 
 # Log file
 *.log
@@ -30,8 +29,9 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
-/*/target
-/*/*.iml
+/**/target
+/**/mvnw*
+/**/*.iml
 
 # Package Files #
 *.jar
