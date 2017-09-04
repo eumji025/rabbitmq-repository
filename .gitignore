@@ -46,6 +46,7 @@
 hs_err_pid*
 
 
+.idea
 # gitignore
 /*/.gitignore
 .idea/checkstyle-idea.xml
