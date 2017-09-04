@@ -49,12 +49,4 @@ hs_err_pid*
 .idea
 # gitignore
 /*/.gitignore
-.idea/checkstyle-idea.xml
-.idea/compiler.xml
-.idea/kotlinc.xml
-.idea/libraries/
-.idea/markdown-navigator/
-.idea/misc.xml
-.idea/modules.xml
-.idea/workspace.xml
 
