@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.eumji</groupId>
+    <artifactId>rabbitmq</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+
+    <modules>
+        <module>rabbitmq-java-helloworld</module>
+        <module>rabbitmq-java-work-queue</module>
+        <module>rabbitmq-java-publish-receive</module>
+        <module>rabbitmq-java-routing</module>
+        <module>rabbitmq-java-topic</module>
+        <module>rabbitmq-java-rpc</module>
+
+        <module>rabbitmq-spring-helloworld</module>
+        <module>rabbitmq-spring-work-queue</module>
+        <module>rabbitmq-spring-exchange-fanout</module>
+        <module>rabbitmq-spring-direct-exchange</module>
+        <module>rabbitmq-spring-exchange-fanout</module>
+        <module>rabbitmq-spring-rpc</module>
+    </modules>
+
+</project>
